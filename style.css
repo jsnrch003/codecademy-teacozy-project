@@ -63,10 +63,13 @@ h4, h5 {
     font-weight: 400;
 }
 
+#mission, #featured, #locations {
+    height: 60rem;
+}
+
 /* Mission Section */
 
 #mission {
-    height: 700px;
     display: flex;
     align-items: center;
     background-image: url("images/img-mission-background.webp");
@@ -113,7 +116,7 @@ h4, h5 {
 }
 
 .card {
-    margin: 1rem;
+    margin: 1.5em 1em;
 }
 
 .card h4 {
@@ -124,7 +127,6 @@ h4, h5 {
 /* Locations Section */
 
 #locations {
-    height: 500px;
     background-image: url("images/img-locations-background.webp");
     background-position: center;
     background-repeat: no-repeat;
