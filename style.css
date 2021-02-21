@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: rgb(15 10 5);
+    opacity: 0.9;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 69px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    padding: 10px;
+    border-bottom: 1px solid seashell;
+    background-color: rgb(15 10 5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: inherit;
+}
+
+img.logo {
+    height: 50px;
+    float: left;
+}
+
+ul.nav-list {
+    list-style: none;
+    display: inline-flex;
+    justify-self: flex-end;
+}
+
+ul.nav-list li {
+    padding-left: 2rem;
+    align-self: center;
+}
+
+main {
+    margin: 69px 0;
+}
+
+.spacer {
+    height: auto;
+}
+
+h4, h5 {
+    font-weight: 400;
+}
+
+/* Mission Section */
+
+#mission {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    background-image: url("images/img-mission-background.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mission {
+    background-color: rgb(15 10 5);
+    width: 100%;
+    flex-direction: column;
+    margin-top: -10%;
+}
+
+.mission h2, .mission h4 {
+    padding: .25em 0;
+}
+
+/* Featured Section */
+
+#featured {
+    padding-top: 69px;
+}
+
+.featured h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.featured h4 {
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.cards img {
+    width: 300px;
+    height: 200px;
+}
+
+.card {
+    margin: 0 1rem;
+}
+
+.card h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Locations Section */
+
+#locations {
+    height: 500px;
+    background-image: url("images/img-locations-background.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 69px;
+}
+
+#locations h2 {
+    margin-top: 2rem;
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+}
+
+.location {
+    margin: 15px 20px auto;
+}
+
+.location ul {
+    list-style: none;
+    width: 300px;
+    background-color: rgb(15 10 5);
+}
+
+.location li {
+    padding: 1rem 0;
+}
+
+/* Footer Section */
+
+#contact {
+    margin-bottom: 45%;
+}
+
+.copyright {
+    margin: 20px;
+    text-align: left;
+}
+
+.contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
