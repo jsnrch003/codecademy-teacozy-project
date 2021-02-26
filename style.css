@@ -178,3 +178,26 @@ h4, h5 {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+/* Grid */
+
+@media screen (max-width: 478px) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 2fr 1fr 1fr;
+        grid-template-areas: "header" "header" "main" "main" "contact" "copyright";
+    }
+    header {
+        grid-area: "header";
+    }
+    main {
+        grid-area: "main";
+    }
+    .contact {
+        grid-area: "contact";
+    }
+    .copyright {
+        grid-area: "copyright";
+    }
+}
