@@ -220,6 +220,9 @@ h4, h5 {
         background-size: cover;
         display: inline-block;
     }
+    .location {
+        border-bottom: 1px inset #746144;
+    }
     #featured, #locations {
         padding-top: 125px;
     }
@@ -236,8 +239,5 @@ h4, h5 {
         margin: 2em 0 0;
         display: inline-flex;
         justify-content: center;
-    }
-    .location {
-        border-bottom: 1px inset #746144;
     }
 }
