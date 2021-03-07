@@ -5,110 +5,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
     <title>Tea Cozy</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="#contact"><img class="logo" src="images/img-tea-cozy-logo.webp" alt="Tea Cozy logo"></a>
-            <ul class="nav-list">
-                <li class="nav-items"><a href="#mission">Mission</a></li>
-                <li class="nav-items"><a href="#featured">Featured Tea</a></li>
-                <li class="nav-items"><a href="#locations">Locations</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#contact"><img class="logo navbar-brand" src="images/img-tea-cozy-logo.webp"
+                        alt="Tea Cozy logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav-list nav justify-content-end">
+                        <li class="nav-items nav-item"><a class="nav-link" aia-current="page"
+                                href="#mission">Mission</a>
+                        </li>
+                        <li class="nav-items nav-item"><a class="nav-link" aia-current="page" href="#featured">Featured
+                                Tea</a></li>
+                        <li class="nav-items nav-item"><a class="nav-link" aia-current="page"
+                                href="#locations">Locations</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="mission">
+    <main class="container-fluid">
+        <section id="mission" class="container">
             <div class="mission">
                 <h2>Our Mission</h2>
-                <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+                <h4><em>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic
+                        Tea</em></h4>
             </div>
         </section>
-        <section id="featured">
-            <div class="featured">
-                <h2>Tea of the Month</h2>
-                <h4>What's Steeping at The Tea Cozy?</h4>
-                <div class="cards">
-                    <div class="card">
-                        <img src="images/img-berryblitz.webp" alt="">
-                        <caption>
-                            <h4>Fall Berry Blitz Tea</h4>
-                        </caption>
-                    </div>
-                    <div class="card"><img src="images/img-spiced-rum.webp" alt="">
-                        <caption>
-                            <h4>Spiced Rum Tea</h4>
-                        </caption>
-                    </div>
-                    <div class="card"><img src="images/img-donut.webp" alt="">
-                        <caption>
-                            <h4>Seasonal Donuts</h4>
-                        </caption>
-                    </div>
-                    <div class="card"><img src="images/img-myrtle-ave.webp" alt="">
-                        <caption>
-                            <h4>Myrtle Ave Tea</h4>
-                        </caption>
-                    </div>
-                    <div class="card"><img src="images/img-bedford-bizarre.webp" alt="">
-                        <caption>
-                            <h4>Bedford Bizarre Tea</h4>
-                        </caption>
-                    </div>
+        <div class="container">
+            <div class="container">
+                <section id="featured" class="container">
+                    <div class="featured container">
+                        <h2>Tea of the Month</h2>
+                        <h4>What's Steeping at The Tea Cozy?</h4>
+                        <div class="cards row-cols-1 row-cols-md-4">
+                            <div class="card col col-md-5 col-lg-3">
+                                <img src="images/img-berryblitz.webp" alt="">
+                                <caption>
+                                    <h4>Fall Berry Blitz Tea</h4>
+                                </caption>
+                            </div>
+                            <div class="card col col-md-5 col-lg-3"><img src="images/img-spiced-rum.webp" alt="">
+                                <caption>
+                                    <h4>Spiced Rum Tea</h4>
+                                </caption>
+                            </div>
+                            <div class="card col col-md-5 col-lg-3"><img src="images/img-donut.webp" alt="">
+                                <caption>
+                                    <h4>Seasonal Donuts</h4>
+                                </caption>
+                            </div>
+                            <div class="card col col-md-5 col-lg-3"><img src="images/img-myrtle-ave.webp" alt="">
+                                <caption>
+                                    <h4>Myrtle Ave Tea</h4>
+                                </caption>
+                            </div>
+                            <div class="card col col-md-5 col-lg-3"><img src="images/img-bedford-bizarre.webp" alt="">
+                                <caption>
+                                    <h4>Bedford Bizarre Tea</h4>
+                                </caption>
+                            </div>
 
-                </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        <section id="locations">
-            <h2>Locations</h2>
-            <div class="locations">
-                <div class="location">
-                    <ul>
-                        <li>
-                            <h3>Downtown</h3>
-                        </li>
-                        <li>384 West 4th St</li>
-                        <li>Suite 108</li>
-                        <li>Portland, ME</li>
-                    </ul>
-                </div>
-                <div class="location">
-                    <ul>
-                        <li>
-                            <h3>East Bayside</h3>
-                        </li>
-                        <li>3433 Phisherman's Avenue</li>
-                        <li>(Northwest Corner)</li>
-                        <li>Portland, ME</li>
-                    </ul>
-                </div>
-                <div class="location">
-                    <ul>
-                        <li>
-                            <h3>Oakdale</h3>
-                        </li>
-                        <li>515 Crescent Avenue</li>
-                        <li>Second Floor</li>
-                        <li>Portland, ME</li>
-                    </ul>
-                </div>
+            <div class="container">
+                <section id="locations">
+                    <h2>Locations</h2>
+                    <div class="locations row">
+                        <div class="location col">
+                            <ul>
+                                <li>
+                                    <h3>Downtown</h3>
+                                </li>
+                                <li>384 West 4th St</li>
+                                <li>Suite 108</li>
+                                <li>Portland, ME</li>
+                            </ul>
+                        </div>
+                        <div class="location col">
+                            <ul>
+                                <li>
+                                    <h3>East Bayside</h3>
+                                </li>
+                                <li>3433 Phisherman's Avenue</li>
+                                <li>(Northwest Corner)</li>
+                                <li>Portland, ME</li>
+                            </ul>
+                        </div>
+                        <div class="location col">
+                            <ul>
+                                <li>
+                                    <h3>Oakdale</h3>
+                                </li>
+                                <li>515 Crescent Avenue</li>
+                                <li>Second Floor</li>
+                                <li>Portland, ME</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
-    <footer id="contact">
+    <footer id="contact" class="container">
         <div class="contact">
             <h2>The Tea Cozy</h2>
-            <h5>contact@theteacozy.com</h5>
-            <h5>917-555-8904</h5>
+            <h5><button type="button" class="btn btn-outline-info"><a
+                        href="mailto:contact@theteacozy.com">contact@theteacozy.com</a></button></h5>
+            <h5><a href="tel:917-555-8904">917-555-8904</a></h5>
         </div>
         <div class="copyright">
-            <h5>copyright The Tea Cozy 2017</h5>
+            <h5 id="copyright">&copy; The Tea Cozy 2017</h5>
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
