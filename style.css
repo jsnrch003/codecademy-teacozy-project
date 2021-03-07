@@ -191,6 +191,10 @@ h3, h4, h5 {
     padding-top: 69px;
 }
 
+.email, .phone {
+    text-decoration: none;
+}
+
 #copyright {
     font-size: .7em;
 }
