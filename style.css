@@ -148,7 +148,6 @@ h4, h5 {
     margin: 2em 0;
     display: inline-flex;
     justify-content: center;
-    border-bottom: 1px inset #746144;
 }
 
 .location:nth-child(3) {
@@ -237,5 +236,8 @@ h4, h5 {
         margin: 2em 0 0;
         display: inline-flex;
         justify-content: center;
+    }
+    .location {
+        border-bottom: 1px inset #746144;
     }
 }
