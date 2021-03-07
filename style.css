@@ -5,10 +5,10 @@
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     color: seashell;
-    background-color: #221911;
+    background-color: #381D2A;
     opacity: 0.9;
     text-align: center;
     /* position: relative; */
@@ -22,7 +22,6 @@ header {
     position: fixed;
     z-index: 10;
     padding: 10px;
-    background-color: #221911;
 }
 
 nav {
@@ -42,19 +41,24 @@ img.logo {
 ul.nav-list {
     list-style: none;
     display: inline-flex;
-    justify-self: flex-end;
+    justify-self: center;
 }
 
-ul.nav-list li {
+/* ul.nav-list li {
     padding-left: 2rem;
     align-self: center;
-}
+} */
 
 /* main {
     margin: 69px 0;
 } */
 
-h4, h5 {
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
@@ -68,21 +72,27 @@ h4, h5 {
     display: flex;
     align-items: center;
     background-image: url("images/img-mission-background.webp");
-    background-color: #ffe5c1;
-    background-blend-mode: multiply;
+    background-color: #381D2A;
+    background-blend-mode: hard-light;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .mission {
-    background-color: #221911;
+    background-color: #BA5624;
     width: 100%;
     flex-direction: column;
     /* margin-top: -10%; */
 }
 
-.mission h2, .mission h4 {
+.mission h2 {
+    text-transform: uppercase;
+    padding: .25em 0;
+}
+
+.mission h4 {
+    font-style: italic;
     padding: .25em 0;
 }
 
@@ -97,35 +107,39 @@ h4, h5 {
     margin-bottom: 1rem;
 }
 
-.featured h4 {
+/* .featured h4 {
     margin-bottom: 2rem;
-}
+} */
 
 .cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    color: #462b2b;
+    color: #BA5624;
+    font-size: .8em;
 }
 
 .cards img {
     width: auto;
+    border-radius: 20px 20px 0 0;
 }
 
 .card {
-    margin: 1.5em 1em;
+    margin: 1em;
+    border-radius: 20px;
 }
 
 .card h4 {
     margin: 5px;
+    font-weight: 700;
 }
 
 /* Locations Section */
 
 #locations {
     background-image: url("images/img-locations-background.webp");
-    background-color: #2b221b;
-    background-blend-mode: overlay;
+    background-color: #BA5624;
+    background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,19 +149,19 @@ h4, h5 {
 
 #locations h2 {
     margin-top: 2rem;
-    border-bottom: 4px ridge #746144;
+    border-bottom: 4px ridge #FFA552;
     padding-bottom: 0.4em;
 }
 
-.locations {
+/* .locations {
     display: flex;
     justify-content: center;
-}
+} */
 
 .location {
-    margin: 2em 0;
     display: inline-flex;
-    justify-content: center;
+    /* justify-content: center; */
+    padding: 1em 0 0;
 }
 
 .location:nth-child(3) {
@@ -157,6 +171,7 @@ h4, h5 {
 .location h3 {
     text-transform: uppercase;
     font-style: italic;
+    color: #FFA552;
 }
 
 .location ul {
@@ -166,7 +181,7 @@ h4, h5 {
 }
 
 .location li {
-    padding: 1em 0;
+    /* padding: 1em 0; */
 }
 
 /* Footer Section */
@@ -199,45 +214,50 @@ h4, h5 {
 }
 
 .btn:hover {
-    background-color: #b18181;
-    border-color: #4e3535;
-    color: #2c2525;
+    background-color: #FCDE9C;
+    border-color: #FFA552;
+    color: #381D2A;
 }
 
 /* Media Queries */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     #locations {
-        background-position-x: -25em;
+        background-position-x: -1em;
     }
-}
+} */
 
 @media (max-width: 992px) {
     #locations {
         background-image: url("images/img-locations-background.webp");
-        background-position-x: -50em;
+        background-position-x: -10em;
         background-repeat: no-repeat;
         background-size: cover;
         display: inline-block;
     }
     .location {
-        border-bottom: 1px inset #746144;
+        border-bottom: 1px inset #BA5624;
     }
     #featured, #locations {
-        padding-top: 125px;
+        padding-top: 170px;
     }
 }
 
 @media (max-width: 768px) {
     #locations {
         background-image: url("images/img-locations-background.webp");
-        background-position-x: -50em;
+        background-position-x: -29em;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .location {
-        margin: 2em 0 0;
         display: inline-flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 568px) {
+    ul.nav-list {
+        justify-content: space-evenly!important;
     }
 }
