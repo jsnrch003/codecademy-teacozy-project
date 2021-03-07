@@ -11,7 +11,6 @@ body {
     background-color: #381D2A;
     opacity: 0.9;
     text-align: center;
-    /* position: relative; */
 }
 
 header {
@@ -44,15 +43,6 @@ ul.nav-list {
     justify-self: center;
 }
 
-/* ul.nav-list li {
-    padding-left: 2rem;
-    align-self: center;
-} */
-
-/* main {
-    margin: 69px 0;
-} */
-
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -83,7 +73,6 @@ h3, h4, h5 {
     background-color: #BA5624;
     width: 100%;
     flex-direction: column;
-    /* margin-top: -10%; */
 }
 
 .mission h2 {
@@ -107,11 +96,7 @@ h3, h4, h5 {
     margin-bottom: 1rem;
 }
 
-/* .featured h4 {
-    margin-bottom: 2rem;
-} */
-
-.cards {
+.featured-cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -119,17 +104,18 @@ h3, h4, h5 {
     font-size: .8em;
 }
 
-.cards img {
-    width: auto;
+.featured-cards img {
+    width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.card {
+.featured-card {
     margin: 1em;
     border-radius: 20px;
+    background-color: #FCDE9C;
 }
 
-.card h4 {
+.featured-card h4 {
     margin: 5px;
     font-weight: 700;
 }
@@ -140,7 +126,7 @@ h3, h4, h5 {
     background-image: url("images/img-locations-background.webp");
     background-color: #BA5624;
     background-blend-mode: multiply;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -153,14 +139,8 @@ h3, h4, h5 {
     padding-bottom: 0.4em;
 }
 
-/* .locations {
-    display: flex;
-    justify-content: center;
-} */
-
 .location {
     display: inline-flex;
-    /* justify-content: center; */
     padding: 1em 0 0;
 }
 
@@ -180,14 +160,9 @@ h3, h4, h5 {
     padding: 0;
 }
 
-.location li {
-    /* padding: 1em 0; */
-}
-
 /* Footer Section */
 
 #contact {
-    /* margin-bottom: 33%; */
     padding-top: 69px;
 }
 
@@ -225,11 +200,12 @@ h3, h4, h5 {
 
 /* Media Queries */
 
-/* @media (max-width: 1200px) {
-    #locations {
-        background-position-x: -1em;
+@media (max-width: 1200px) {
+    .location {
+        display: flex;
+        justify-content: center;
     }
-} */
+}
 
 @media (max-width: 992px) {
     #locations {
@@ -238,9 +214,6 @@ h3, h4, h5 {
         background-repeat: no-repeat;
         background-size: cover;
         display: inline-block;
-    }
-    .location {
-        border-bottom: 1px inset #BA5624;
     }
     #featured, #locations {
         padding-top: 170px;
